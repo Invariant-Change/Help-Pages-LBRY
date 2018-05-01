@@ -21,3 +21,5 @@ Want to tip someone? This will send a tip to a chosen username.
 `@LBC_TipBot lbryian <username> <amount>`
 **Example:**
 `@LBC_TipBot lbryian @invariantchange 10`
+
+Note: Make sure you keep your commands on one line. If they are on multiple lines, the command will not work.

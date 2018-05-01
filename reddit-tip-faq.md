@@ -37,4 +37,4 @@ Want to gild a post? This will command will gild the post you are replying to.
 `gild u/lbryian`
 `u/lbryian gild`
 
-Find out more about Reddit Gilding [here](https://www.reddit.com/gilding/). 
+Find out more about Reddit Gilding [here](https://www.reddit.com/gilding/).
