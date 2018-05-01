@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LBRY Discord TipBot Usage</title>
+<style type="text/css">
+html {
+	scroll-behavior: smooth;
+}
+body {
+	display: block;
+	background: #222;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 100%;
+	color: #888;
+	margin-bottom: 50px;
+}
+#stuff {
+	background: #222;
+	display: block;
+	padding: 10px;
+	margin: 0 auto;
+	width: 90%;
+}
+h1, h2, h3, h4 {
+	color: #ccc;
+	text-transform: uppercase;
+}
+h3, h4, h5 {
+	text-decoration: underline;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1rem;
+}
+button {
+	color: #ecd061;
+	padding: 6px 12px;
+	border: 1px solid #444;
+	border-radius: 3px;
+	background: #353535;
+	font-size: 80%;
+	margin-left: 12px;
+}
+.intro {
+	padding-bottom: 10px;
+}
+.intro p {
+	font-size: 1.1rem;
+}
+.menu {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.menu a {
+	color: #3D83FF;
+	font-size: 1rem;
+}
+.menu a:hover, .menu a:focus {
+	color: #FFFFFF;
+}
+.menu a:visited {
+	color: #555;
+}
+.menu-button {
+	font-size: 80%;
+	padding: 2px 8px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	background: #292929;
+	margin-right: 10px;
+}
+section {
+	transition: background 0.3s ease;
+	display: block;
+	width: 90%;
+	border: 1px solid #353535;
+	margin: 10px 10px 20px;
+	padding: 10px 30px;
+	border-radius: 6px;
+	background: #252525;
+	box-shadow: 4px 4px 6px rgba(0,0,0,0.15);
+}
+section:hover, section:focus, section:active {
+	background: #1e1e1e;
+	color: #bbb;
+}
+.code-section {
+	border-left: 14px solid #FF3662;
+	padding-left: 16px;
+	margin-left: 20px;
+}
+.example-code, .argument-code {
+	display: inline-block;
+	border-left: 6px solid #565252;
+	background: #353535;
+	font-size: 1.2rem;
+}
+.example-code:hover, .argument-code:hover, .example-code:focus, .argument-code:focus {
+	border-left: 6px solid #999;
+}
+.argument-code {
+	color: #689AFF;
+	padding: 6px 12px;
+	border-radius: 3px;
+}
+.example-code {
+	color: #FF3662;
+	padding: 6px 12px;
+	border-radius: 3px;
+}
+.arguments, .example {
+	color: #555;
+	font-weight: bold;
+}
+ @media only screen and (max-width: 768px) {
+/* For mobile phones: */
+body {
+	font-size: 1.1rem;
+}
+#stuff {
+	width: 100%;
+}
+.intro p {
+	font-size: 0.9rem;
+}
+.menu a {
+	font-size: 0.8rem;
+}
+section {
+	width: 100%;
+	margin: 6px;
+	padding: 7px 15px;
+}
+.code-section {
+	border-left: 10px solid #FF3662;
+	padding-left: 8px;
+	margin-left: 10px;
+}
+.arguments, .example {
+	font-size: 1rem;
+}
+.example-code, .argument-code {
+	font-size: 1.2rem;
+}
+</style>
+</head>
+
+<body>
+<div id="stuff">
+  <h1>LBRY Discord TipBot Usage</h1>
+  <div class="intro">
+    <p>Tips are an integral part of our community. You can earn them, you can share them and you can transfer them. Use the following commands to make amazing things happen.</p>
+  </div>
+  <div class="menu"><span class="menu-button">MENU</span> <a href="#help">Help</a> | <a href="#balance">Balance</a> | <a href="#deposit">Deposit</a> | <a href="#withdraw">Withdraw</a> | <a href="#private">Private Tips</a> | <a href="#multi">Multi Tips</a> | <a href="#role">Role Tips </a></div>
+  <div class="code-section">
+    <section>
+      <h3 id="help">Help</h3>
+      <p>This displays a list of tip commands and how to use them. A basic Discord version of this.</p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!tip help</code></p>
+    </section>
+    <section>
+      <h3 id="balance">Balance</h3>
+      <p>Displays the balance of your Discord LBRY wallet.</p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!tip balance</code></p>
+    </section>
+    <section>
+      <h3 id="deposit">Deposit</h3>
+      <p>Displays your Discord LBRY wallet address. Useful if you want to receive LBC's directly to your Discord wallet</p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!tip deposit</code></p>
+    </section>
+    <section>
+      <h3 id="withdraw">Withdraw</h3>
+      <p>Use this to withdraw a chosen amount from your LBRY Discord wallet to another LBRY wallet such as the wallet in your LBRY app, or to a LBC wallet on an exchange.</p>
+      <p class="arguments">Arguments:</p>
+      <p><code class="argument-code">!tip withdraw &lt;address&gt; &lt;amount&gt;</code></p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!tip withdraw bQ8N2xbbityGNyiijaUtZVHkN3KZys2ci 10</code></p>
+    </section>
+    <section>
+      <h3  id="private">Private Tips</h3>
+      <p>Want to tip someone privately in a personal message? This will send a tip to your chosen username in a private personal message.</p>
+      <p class="arguments">Arguments:</p>
+      <p><code class="argument-code">!tip private &lt;username&gt; &lt;amount&gt; </code></p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!tip private @Electron#1111 10</code></p>
+    </section>
+    <section>
+      <h3 id="multi">Multi tips</h3>
+      <p>This will send your set tip amount to all the users you list.</p>
+      <p class="arguments">Arguments:</p>
+      <p><code class="argument-code">!multitip &lt;usernames&gt; &lt;amount&gt; </code></p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!multitip @Electron#1111 @Proton#222 10</code></p>
+    </section>
+    <section id="multi-link">
+      <h3>Multi Tip Private</h3>
+      <p>This will privately send your set tip amount to all the users you list in personal messages.</p>
+      <p class="arguments">Arguments:</p>
+      <p><code class="argument-code">!multitip private &lt;usernames&gt; &lt;amount&gt; </code></p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!multitip private @Electron#1111 @Proton#222 10</code></p>
+    </section>
+    <section>
+      <h3 id="role">Role Tips</h3>
+      <p>Want to tip a Disocrd role? This will send a tip to your chosen role.</p>
+      <p class="arguments">Arguments:</p>
+      <p><code class="argument-code">!tip &lt;role&gt; &lt;amount&gt; </code></p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!roletip @LBRY Team 10</code></p>
+    </section>
+    <section>
+      <h3>Private Role Tips</h3>
+      <p>Want to tip a Disocrd role privately? This will send a tip to your chosen role in a private message.</p>
+      <p class="arguments">Arguments:</p>
+      <p><code class="argument-code">!tip private &lt;role&gt; &lt;amount&gt; </code></p>
+      <p class="example">Example:</p>
+      <p><code class="example-code">!roletip private @LBRY Team 10</code></p>
+    </section>
+  </div>
+</div>
+</body>
+</html>
