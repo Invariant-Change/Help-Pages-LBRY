@@ -46,14 +46,14 @@ This will privately send your set tip amount to all the users you list in person
 `!multitip private @Electron#1111 @Proton#222 10`
 
 ## Role Tips
-Want to tip a Disocrd role? This will send a tip to your chosen role.
+Want to tip a Discord role? This will send a tip to your chosen role.
 **Arguments:**
 `!tip <role> <amount>`
 **Example:**
 `!tip @LBRY Team 10`
 
 ## Private Role Tips
-Want to tip a Disocrd role privately? This will send a tip to your chosen role in a private message.
+Want to tip a Discord role privately? This will send a tip to your chosen role in a private message.
 **Arguments:**
 `!roletip private <role> <amount>`
 **Example:**
